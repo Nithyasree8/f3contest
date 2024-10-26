@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feast & Fable</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #4CAF50;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.menu-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    transition: transform 0.2s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item p {
+    margin: 5px 0;
+}
+
+.menu-item span {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+@media (max-width: 600px) {
+    #menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 90%;
+    }
+}
+
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Feast & Fable</h1>
+    </header>
+    <main>
+        <div id="menu-container"></div>
+        <button id="order-btn">Place Order</button>
+        <div id="order-status"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
